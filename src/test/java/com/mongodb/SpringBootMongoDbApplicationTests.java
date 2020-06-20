@@ -1,9 +1,10 @@
-package com.mongoItem;
+package com.mongodb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+
 @SpringBootTest
-class SpringMongoDbItemApplicationTests {
+class SpringBootMongoDbApplicationTests {
 
 	@Test
 	void contextLoads() {

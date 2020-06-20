@@ -3,8 +3,9 @@ package com.repo;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 
-import com.model.Item;
+import com.model.Employee;
+
 @Repository
-public interface ItemRepo extends ReactiveMongoRepository<Item,String> {
+public interface EmployeeRepository extends ReactiveMongoRepository<Employee,String> {
 
 }

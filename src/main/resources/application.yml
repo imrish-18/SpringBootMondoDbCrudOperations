@@ -1,16 +1,13 @@
+server:  port: 8002
 spring:
   profiles:
     active: dev
 
 ---
-spring:
-  profiles: dev
-  data:
-    mongodb:
-      host: localhost
+spring:  profiles: dev
+  data:    mongodb:      host: localhost
       port: 27017
-      database: employee
-
+      database: employee
 ---
      
 spring:
