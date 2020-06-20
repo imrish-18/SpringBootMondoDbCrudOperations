@@ -23,19 +23,19 @@ public class EmployeeService {
 	private EmployeeRepository rep;
      
 /**
- * Creates the.
+ * save employee.
  *
  * @param emp1 the emp 1
  * @return the mono
  */
-public  Mono<Employee> create(Employee emp1)
+public  Mono<Employee> saveEmp(Employee emp1)
 {
 	
 	 return rep.save(emp1);
 }
 
 /**
- * Gets the.
+ * Get emp.
  *
  * @return the flux
  */
@@ -46,7 +46,7 @@ public Flux<Employee> get()
 }
 
 /**
- * Gets the all.
+ * Get the all emp
  *
  * @return the all
  */
@@ -56,7 +56,7 @@ public Flux<Employee> getAll()
 }
 
 /**
- * Gets the byid.
+ * Get the byid.
  *
  * @param id the id
  * @return the byid

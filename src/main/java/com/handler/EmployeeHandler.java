@@ -57,7 +57,7 @@ public class EmployeeHandler {
   public Mono<ServerResponse> postEmp(ServerRequest serverRequest) {
 	  return serverRequest.bodyToMono(Employee.class).flatMap(empl->{
 			return ServerResponse.ok().contentType(MediaType.APPLICATION_JSON).
-		body(emp.create(empl), Employee.class);
+		body(emp.saveEmp(empl), Employee.class);
 		});
 	  }
   
